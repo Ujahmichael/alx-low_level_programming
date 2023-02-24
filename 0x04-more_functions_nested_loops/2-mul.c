@@ -7,7 +7,6 @@
  * @b: the second  integer to mul
  * Return: addition of a and b
  */
-
 int mul(int a, int b)
 {
 	return ( a * b);
