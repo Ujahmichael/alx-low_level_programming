@@ -3,9 +3,8 @@
 /**
  * _isdigit - check for a digit number
  * @c: character to check
- * Return: 1 or 0
+ * Return: 0 or 1
  */
-
 int _isdigit(int c)
 {
 	if (c >= 48 && c <= 58)
