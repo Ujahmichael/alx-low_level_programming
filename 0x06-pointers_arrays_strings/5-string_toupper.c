@@ -1,20 +1,17 @@
 #include "main.h"
 /**
  * string_toupper - change lowercase to uppercase
- * @s:string
+ * @str:string
  * Return:char
  */
-char *string_toupper(char *j)
+char *string_toupper(char *str)
 {
+int i = 0;
 
-	int i;
-
-i = 0;
-	while (*(j + i))
-	{
-		if (*(j + i) >= 'a' && *(j + i) <= 'z')
-			*(j + i) -= 'a' - 'A';
-		i++;
-	}
-	return (j);
+for (i = 0; str[i] != '\0'; i++)
+{
+if (str[i] >= 'a' && str[i] <= 'z')
+str[i] = str[i] - 'a' + 'A';
+}
+return (str);
 }
