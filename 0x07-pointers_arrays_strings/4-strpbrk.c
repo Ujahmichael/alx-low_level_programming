@@ -4,13 +4,11 @@
 * _strpbrk - search a string for any of a set of byte
 * @s: string
 * @accept: second string
+* Return: 0
 */
 char *_strpbrk(char *s, char *accept)
 {
-int i, j, m, n;
-i = 0;
-m = 0;
-n = 0;
+int i = 0, j, m = 0, n = 0;
 
 while (*(s + i) != '\0')
 {
@@ -29,6 +27,7 @@ break;
 }
 i++;
 }
+
 if (n == 0)
 {
 return ('\0');
