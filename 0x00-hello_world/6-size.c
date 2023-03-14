@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print a c programme that print data size
  *
@@ -12,10 +13,10 @@ int main(void)
 	long long int d;
 	float f;
 
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
-	printf("size of a int: %lu byte(s)\n", (unsigned long)sizeof(b));
-	printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-	printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	printf("size of a char: %zu byte(s)\n", sizeof(a));
+	printf("size of an int: %zu byte(s)\n", sizeof(b));
+	printf("size of a long int: %zu byte(s)\n", sizeof(c));
+	printf("size of a long long int: %zu byte(s)\n", sizeof(d));
+	printf("size of a float: %lu byte(s)\n", sizeof(f));
 	return (0);
 }
